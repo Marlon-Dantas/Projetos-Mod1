@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #F7BB5B;
+    background-image: url(https://cdn.create.vista.com/api/media/medium/19078677/stock-vector-illustration-animals-paws-print-yelow?token=);
+}
+
+.logo{
+    background-color: black;
+    height: 60px;
+}
+
+.info a{
+    text-align: center;
+    margin-left: 200px;
+    color: white;
+    font-size: 1.3em;
+    line-height: 2.3em;
+    float: left;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+.info a:hover{
+    background-color: rgb(29, 29, 29);
+    padding: 5px 5px;
+    
+
+}
+
+
+.info li{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+}
+
+#menu{
+    align-items: baseline;
+}
+
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #F59D12;
+    float: left;
+    border-radius: 30px;
+    margin-left: 190px;
+    margin-top: 15px;
+}
+
+#menu ul li{
+    float: right;
+}
+
+#menu ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 15.1em;
+    line-height: 2.0em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+#menu ul a:hover{
+    color: rgb(241, 241, 241);
+    background: #fcb33f;
+    border-radius: 30px;
+}
+
+
+.fundo{
+    background-color: #F59D12;
+    height: 810px;
+    width: 800px;
+    float: left;
+    margin-left: 275px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+     
+}
+
+
+.box-galeria{
+    width: 200px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 23px;
+    cursor: zoom-in;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.box-galeria:hover .box1{
+    transform: scale(1.2);
+
+}
+
+.box1{
+    border-radius: 10%;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    transition: 0.2s;
+    background-image: url(https://fashionsista.co/wallpaper/wallpaper/20220228/download-680-koleksi-background-kuning-hitam-vektor-hd-preview.webp);
+    background-size: cover;
+}
+
+.box1 p{
+    height: 100px;
+    width: 50px;
+    color: blue;
+    border: 2px solid blue;
+    display: flex;
+    float: left;
+}
+
+.box1 img{
+    margin-left: 50px;
+    background-size: cover;
+    block-size: 150px;
+    
+}
+
+.box-galeria:hover .box2{
+    transform: scale(1.2);
+
+}
+
+.box2{
+    height: 150px;
+    width: 200px;
+    display: flex;
+    transition: 0.2s;
+}
+
+.box-galeria:hover .box5{
+    transform: scale(1.2);
+
+}
+
+.box5{
+    height: 150px;
+    width: 200px;
+    display: flex;
+    transition: 0.2s;
+}
+
+.box2 img{
+    background-image: url(https://fashionsista.co/wallpaper/wallpaper/20220228/download-680-koleksi-background-kuning-hitam-vektor-hd-preview.webp);
+    background-size: cover;
+    block-size: 150px;
+    border-radius: 10%;
+}
+
+.box5 img{
+    background-image: url(https://fashionsista.co/wallpaper/wallpaper/20220228/download-680-koleksi-background-kuning-hitam-vektor-hd-preview.webp);
+    background-size: cover;
+    block-size: 150px;
+    border-radius: 10%;
+}
+
+p{
+    margin-top: 10px;
+    color: wheat;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.rodape{
+    background-color: black;
+    height: 60px;
+    margin-top: 900px;
+}
+
+#rp{
+    color: white;
+    padding: 15px 0 0 15px;
+    font-size: 0.7em;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+
+    #menu{
+        align-items: baseline;
+    }
+    
+    
+    #menu ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #F59D12;
+        float: left;
+        border-radius: 30px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    
+    #menu ul li{
+        float: right;
+    }
+    
+    #menu ul a{
+        font-size: 0.9em;
+        display: block;
+        margin: 0;
+        padding: 0.5em 8.1em;
+        line-height: 2.0em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        border-radius: 30px;
+    }
+    
+    #menu ul a:hover{
+        color: rgb(241, 241, 241);
+        background: #fcb33f;
+        border-radius: 30px;
+    }
+
+
+
+    .logo{
+        background-color: black;
+        height: 60px;
+        width: 600px;
+    }
+    
+    .info a{
+        text-align: center;
+        margin-left: 50px;
+        color: white;
+        font-size: 1.5em;
+        line-height: 2.3em;
+        float: left;
+        padding: 5px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .info a:hover{
+        background-color: rgb(29, 29, 29);
+        padding: 5px 5px;
+    
+    }
+    .info li{
+        text-decoration: none;
+        list-style: none;
+        float: left;
+    }
+    
+    .fundo{
+        background-color: #F59D12;
+        height: 1280px;
+        width: 550px;
+        float: left;
+        margin-left: 0px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+         
+    }
+    
+    
+    p{
+        margin-top: 10px;
+        color: wheat;
+        background-color: black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .rodape{
+        background-color: black;
+        height: 65px;
+        width: 540px;
+        margin-top: 1400px;
+    }
+    
+    #rp{
+        color: white;
+        padding: 15px 0 0 5px;
+        font-size: 0.7em;
+        
+    }
+
+    
+    
+}

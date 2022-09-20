@@ -1,0 +1,399 @@
+/* cor primaria: #3F38FF  */
+
+:root{
+    --royal-blue-dark: #2a349e;
+    --royal-blue-light: #8480F2;
+    --white: #fff;
+    --background: #1D1A70;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--background);
+
+}
+.header a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--royal-blue-dark);
+    height: 3.3875rem;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo img{
+    height: 60px;
+    font-weight: bold;
+    
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.menu a:hover{
+    background: var(--royal-blue-light);
+}
+
+.label-menu, .checkbox{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .menu{
+        display: block;
+        position: absolute;
+        top: 3.2875rem;
+        left: 0;
+        background: var(--royal-blue-dark);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        transition: 0.5s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+    .menu a{
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+        
+    }
+
+    .label-menu{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+    .hamburger{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+    .hamburger::before, .hamburger::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .checkbox:checked ~ .menu{
+        
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .checkbox:checked ~ .label-menu .hamburger {
+        border-top-color: transparent;
+    }
+    .checkbox:checked ~ .label-menu .hamburger::before{
+        transform: rotate(135deg);
+    }
+    .checkbox:checked ~ .label-menu .hamburger {
+        border-top-color: transparent;
+    }
+    .checkbox:checked ~ .label-menu .hamburger::after{
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+}
+
+
+.myinfo h1{
+    color: var(--royal-blue-light);
+    float: left;
+    margin: 180px 0 0 30px;
+    text-align: left;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 30px 30px black;
+    
+}
+
+
+.myinfo #fotoperfil{
+    float: left;
+    width: 400px;
+    margin: 73px 0 0 60px;
+    border: 2px solid var(--royal-blue-light);
+    border-radius: 200px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.16);
+    
+}
+
+.sobremim h6{
+    color: var(--white);
+    position: relative;
+    min-width: 825px;
+    text-align: right;
+    float: right;
+    margin-left:3.7%;
+    margin-right:3.7%;
+    padding-left:0.5%;
+    padding-right:0.5%;
+    
+}
+.sobremim h2{
+    color: var(--white);
+    color: var(--royal-blue-light);
+    padding: 800px 0 0 620px;
+    
+
+}
+
+.sobremim h3{
+    color: var(--royal-blue-light);
+    padding: 50px 0 20px 620px;
+    
+}
+
+.sobremim{
+    height: 1500px;
+}
+
+.sobremim h4{
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    font-size: 2em;
+    padding: 5px 0 0 260px;
+}
+
+.sobremim p{
+    margin-top: 80px;
+}
+
+.contato h2{
+    color: var(--white);
+    margin: 0 0 0 500px;
+    
+}
+
+.contato form{
+    margin-left: 530px;
+}
+.contato label{
+    margin-left: 90px;
+    color: var(--white);
+}
+.contato input{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.redes{
+    margin-top: 220px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: var(--white);
+}
+.redes img{
+    
+    width: 30px;
+}
+
+.redes p{
+    float: right;
+    justify-content: left;
+    font-size: 0.7em;
+    
+}
+
+
+@media screen and (max-width: 800px){
+
+    .myinfo h1{
+        color: var(--royal-blue-light);
+        float: left;
+        margin: 20px 0 20px;
+        text-align: left;
+        align-items: center;
+        border: 2px solid black;
+        box-shadow: 30px 30px black;
+
+    }
+
+    .sobremim h2{
+        color: var(--royal-blue-light);
+        padding: 800px 0 0 250px;
+        
+    
+    }
+    .sobremim h3{
+        color: var(--royal-blue-light);
+        padding: 50px 0 20px 250px;
+
+    }
+    .sobremim h4{
+        color: var(--white);
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        font-size: 1.0em;
+        padding: 20px 0 0 20px;
+    }
+
+    .contato h2{
+        color: var(--white);
+        margin: 0 0 0 145px;
+        
+    }
+    
+    .contato form{
+        margin-left: 160px;
+    }
+    .contato label{
+        margin-left: 100px;
+        color: var(--white);
+    }
+    .contato input{
+      width: 60%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    .sobremim{
+        height: 1200px;
+    }
+
+    .redes{
+        margin-top: 100px;
+        height: 80px;
+        background-color: rgb(0, 0, 0);
+        color: var(--white);
+    }
+    .redes img{
+        
+        width: 30px;
+    }
+    
+    .redes p{
+        float: right;
+        justify-content: left;
+        font-size: 0.7em;
+        
+    }
+}
+
+/*
+@media screen and (max-width: 1100px){
+
+    .myinfo #fotoperfil{
+        float: left;
+        width: 400px;
+        margin: 73px 0 0 340px;
+        border: 2px solid var(--royal-blue-light);
+        border-radius: 200px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.16);
+        
+    }
+
+    .myinfo h1{
+        color: var(--royal-blue-light);
+        float: left;
+        margin: 90px 0 20px 130px;
+        text-align: left;
+        align-items: center;
+        border: 2px solid black;
+        box-shadow: 30px 30px black;
+
+    }
+
+    .sobremim h2{
+        color: var(--royal-blue-light);
+        padding: 800px 0 0 500px;
+        
+    
+    }
+    .sobremim h3{
+        color: var(--royal-blue-light);
+        padding: 50px 0 20px 500px;
+
+    }
+    .sobremim h4{
+        color: var(--white);
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        font-size: 1.0em;
+        padding: 20px 0 0 120px;
+    }
+
+    .contato h2{
+        color: var(--white);
+        margin: 0 0 0 410px;
+        
+    }
+    
+    .contato form{
+        margin-left: 350px;
+    }
+    .contato label{
+        margin-left: 185px;
+        color: var(--white);
+    }
+    .contato input{
+      width: 60%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    .sobremim{
+        height: 1200px;
+    }
+
+    .redes{
+        margin-top: 100px;
+        height: 60px;
+        background-color: rgb(0, 0, 0);
+        color: var(--white);
+    }
+    .redes img{
+        
+        width: 30px;
+    }
+    
+    .redes p{
+        float: right;
+        justify-content: left;
+        font-size: 0.7em;
+        
+    }
+}*/
+
